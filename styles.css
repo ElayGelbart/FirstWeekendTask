@@ -94,3 +94,15 @@ h6{
     left:0px;
 }
 }
+::-webkit-scrollbar{
+    width:15px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(29, 139, 34); 
+  }
+::-webkit-scrollbar-track {
+    background: #c9c5c5; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(29, 170, 36); 
+  }
