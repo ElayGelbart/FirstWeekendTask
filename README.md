@@ -18,7 +18,7 @@
 - [V] Bonus - add local img to your repo and add it to your website
 
 ## Tester be aware of:
--[ ] User story #10 is completed, because i added more links to nav-bar that not in the <main> the js test doesn't get it.
--[ ] User story #15 is also completed but Chrome or diffrent browser cant pass this User story.
+- User story #10 is completed, because i added more links to nav-bar that not in the <main> the js test doesn't get it.
+- User story #15 is also completed but Chrome or diffrent browser cant pass this User story.
 
 # Made by Elay Gelbart 
