@@ -41,14 +41,22 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-
 #navbar li:hover {
   /* background-color: aliceblue;
   color: rgb(29, 139, 34); */
   animation-name: changeBGColor;
   animation-duration: 0.6s;
   animation-fill-mode: forwards;
+}
+#navbar img{
+  height:30px;
+  width: auto;
+  filter: invert(91%) sepia(88%) saturate(1441%) hue-rotate(178deg) brightness(110%) contrast(105%);
+}
+#navbar li:hover img{
+  filter: invert(37%) sepia(27%) saturate(2715%) hue-rotate(84deg) brightness(100%) contrast(77%);
 }
 #main-doc {
   display: block;
@@ -102,6 +110,7 @@ h6 {
   100% {
     background-color: aliceblue;
     color: rgb(29, 139, 34);
+    /* filter: invert(37%) sepia(27%) saturate(2715%) hue-rotate(84deg) brightness(100%) contrast(77%); */
   }
 }
 ::-webkit-scrollbar {
