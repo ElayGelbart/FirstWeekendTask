@@ -1,108 +1,130 @@
-*{
-    margin :0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-:root{
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+:root {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-#navbar{
-    display:block;
-    position: fixed;
-    left:0;
-    top:0;
-    border-right: 3px solid black;
-    height: 100%;
-    width: 15%;
-    max-width: 20%;
-    text-align:center;
+#navbar {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 3px solid black;
+  height: 100%;
+  width: 15%;
+  max-width: 20%;
+  text-align: center;
 }
-#navbar header{
-    background-color: rgb(20, 30, 20);
-    color:wheat;
-    width:100%;
-    border: 1px solid rgb(20, 30, 20);
-}#navbar ul{
-height: 100vh;
+#navbar header {
+  background-color: rgb(20, 30, 20);
+  color: wheat;
+  width: 100%;
+  border: 1px solid rgb(20, 30, 20);
 }
-#navbar a{
-    text-decoration: none;
-    color:aliceblue;
- 
+#navbar ul {
+  height: 100vh;
 }
-#navbar li{
-    background-color: rgb(29, 139, 34);
-    height: 14vh;
-    border: 1px solid rgb(20, 30, 20);
-    width: 100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+#navbar a {
+  text-decoration: none;
+  color: aliceblue;
+}
+#navbar li {
+  background-color: rgb(29, 139, 34);
+  height: 14vh;
+  border: 1px solid rgb(20, 30, 20);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#navbar li:hover{
-    background-color: aliceblue;
-    color:rgb(29, 139, 34);
+#navbar li:hover {
+  /* background-color: aliceblue;
+  color: rgb(29, 139, 34); */
+  animation-name: changeBGColor;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
 }
-#main-doc{
-    display: block;
-    margin-top: 15px;
-    margin-left: 15%;
-    line-height: 1.3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#main-doc {
+  display: block;
+  margin-top: 15px;
+  margin-left: 15%;
+  line-height: 1.3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-#main-doc section{
-    margin: 30px;
+#main-doc section {
+  margin: 30px;
 }
-#main-doc header{
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color:lightslategrey;
+#main-doc header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  /* color: lightslategrey; */
+  color: rgb(29, 139, 34);
 }
-#main-doc p{
-    text-align:left;
+#main-doc p {
+  text-align: left;
 }
-#main-doc p:first-letter{
-    font-size:1.4rem;
-    color:rgb(29, 139, 34);
+#main-doc p:first-letter {
+  font-size: 1.4rem;
+  color: rgb(29, 139, 34);
 }
-#Contact img{
-    width:auto;
-    height: 50px;
-    border-radius: 50%;
-    vertical-align: middle;
-    opacity: 0.7;
+#Contact img {
+  width: auto;
+  height: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  opacity: 0.7;
 }
-#Contact img:hover{
-    opacity: 1;
+#Contact img:hover {
+  opacity: 1;
 }
-#Contact{
-    position: relative;
+#Contact {
+  position: relative;
 }
-h6{
-    display: block;
-    position:absolute;
-    right:0px;
-    bottom: 0px;
+h6 {
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
-@media  only screen and (min-width: 769px){
-#navbar{
+@media only screen and (min-width: 769px) {
+  #navbar {
     position: fixed;
-    left:0px;
+    left: 0px;
+  }
 }
+@keyframes changeBGColor {
+  100% {
+    background-color: aliceblue;
+    color: rgb(29, 139, 34);
+  }
 }
-::-webkit-scrollbar{
-    width:15px;
+::-webkit-scrollbar {
+  width: 15px;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(29, 139, 34); 
-  }
+  background: rgb(29, 139, 34);
+}
 ::-webkit-scrollbar-track {
-    background: #c9c5c5; 
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(29, 170, 36); 
-  }
+  background: #c9c5c5;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(29, 170, 36);
+}
+::-moz-scrollbar {
+  width: 15px;
+}
+::-moz-scrollbar-thumb {
+  background: rgb(29, 139, 34);
+}
+::-moz-scrollbar-track {
+  background: #c9c5c5;
+}
+::-moz-scrollbar-thumb:hover {
+  background: rgb(29, 170, 36);
+}
