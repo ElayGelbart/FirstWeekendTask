@@ -44,24 +44,27 @@ ul {
   flex-direction: column;
 }
 #navbar li:hover {
-  /* background-color: aliceblue;
-  color: rgb(29, 139, 34); */
   animation-name: changeBGColor;
   animation-duration: 0.6s;
   animation-fill-mode: forwards;
 }
-#navbar img{
-  height:30px;
+#navbar img {
+  height: 30px;
   width: auto;
-  filter: invert(91%) sepia(88%) saturate(1441%) hue-rotate(178deg) brightness(110%) contrast(105%);
+  filter: invert(91%) sepia(88%) saturate(1441%) hue-rotate(178deg)
+    brightness(110%) contrast(105%);
 }
-#navbar li:hover img{
-  filter: invert(37%) sepia(27%) saturate(2715%) hue-rotate(84deg) brightness(100%) contrast(77%);
+#navbar li:hover img {
+  filter: invert(37%) sepia(27%) saturate(2715%) hue-rotate(84deg)
+    brightness(100%) contrast(77%);
+}
+#main-doc,
+#Contact {
+  margin-left: 15%;
 }
 #main-doc {
   display: block;
   margin-top: 15px;
-  margin-left: 15%;
   line-height: 1.3rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -71,7 +74,6 @@ ul {
 #main-doc header {
   font-size: 2rem;
   margin-bottom: 20px;
-  /* color: lightslategrey; */
   color: rgb(29, 139, 34);
 }
 #main-doc p {
@@ -99,18 +101,28 @@ h6 {
   position: absolute;
   right: 0px;
   bottom: 0px;
+  padding-top: 5px;
 }
-@media only screen and (min-width: 769px) {
-  #navbar {
-    position: fixed;
-    left: 0px;
+@media only screen and (max-width: 765px) {
+  h6 {
+    bottom: auto;
+  }
+  #navbar p {
+    display: none;
+  }
+  #navbar{
+    font-size:10px;
+  }
+}
+@media only screen and (max-height: 765px) {
+  #navbar p {
+    display: none;
   }
 }
 @keyframes changeBGColor {
   100% {
     background-color: aliceblue;
     color: rgb(29, 139, 34);
-    /* filter: invert(37%) sepia(27%) saturate(2715%) hue-rotate(84deg) brightness(100%) contrast(77%); */
   }
 }
 ::-webkit-scrollbar {
